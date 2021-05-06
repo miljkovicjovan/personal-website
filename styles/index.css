@@ -183,7 +183,7 @@
     width: 100%;
     height: 2px;
     background:white;
-    top:10%;
+    top:18%;
     animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
   }
 .footer a:hover:before{
@@ -230,9 +230,17 @@
       animation:show .2s #{$i*0.1+1}s ease 1 both;
     }
   }
+
+#jovanmiljkovic {transition: all 1s;}
+#jovanmiljkovic:hover {transform: scale(0.7);}
+
 #j13 {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    font-size: 1rem;
-    font-family: 'Zen Dots';
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 1rem;
+  font-family: 'Zen Dots';
+  transition: all 1s;
+}
+#j13:hover {
+  transform: scale(1.3);
 }
