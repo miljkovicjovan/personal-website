@@ -267,3 +267,91 @@
     padding-top: 30px;
   }
 }
+
+@media only screen and (max-width: 760px) {
+  .skills-cont {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .skills-expertise {
+    margin: auto;
+    padding-bottom: 64px;
+  }
+  .skills-tech-other {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-cont {
+    padding-top: 30%;
+    padding-bottom: 30%;
+  }
+
+  .about-cont h2 {
+    font-size: 1.4rem;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .hero h1 {
+    font-size: 1.1rem;
+  }
+
+  .about-cont h1 {
+    font-size: 1.5rem;
+  }
+  .about-cont h2 {
+    padding-top: 6%;
+    padding-bottom: 4%;
+    font-size: 1.2rem;
+  }
+  .about-cont p {
+    width: 50%;
+    margin: auto;
+  }
+
+  .skills-cont li {
+    padding-left: 0;
+  }
+
+  .skills-expertise {
+    flex-direction: column;
+  }
+  .skills-expertise h1 {
+    padding-bottom: 20px;
+  }
+
+  .skills-tech {
+    flex-direction: column;
+  }
+  .skills-tech h1 {
+    padding-bottom: 20px;
+  }
+
+  .skills-other {
+    flex-direction: column;
+  }
+  .skills-other h1 {
+    padding-bottom: 20px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer p {
+    font-size: 1rem;
+  }
+
+  #j13 {
+    display: none;
+  }
+}
