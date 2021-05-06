@@ -172,6 +172,13 @@
     font-size: 0.7rem;
     font-family: 'Zen Dots';
 }
+.footer ul {
+  padding-top: 20px;
+  list-style: none;
+}
+.footer ul li {
+  display: inline;
+}
 .footer a{
     margin:0 15px;
     position:relative;
@@ -183,55 +190,57 @@
     width: 100%;
     height: 2px;
     background:white;
-    top:18%;
+    top: 80%;
     animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
   }
 .footer a:hover:before{
     animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
   
   }
-  @keyframes in{
-    0%{
-      width: 0;
-      left:0;
-      right:auto;
-    }
-    100%{
-      left:0;
-      right:auto;
-      width: 100%;
-    }
+@keyframes in{
+  0%{
+    width: 0;
+    left:0;
+    right:auto;
   }
-  @keyframes out{
-    0%{
-      width:100%;
-      left: auto;
-      right: 0;
-    }
-    100%{
-      width: 0;
-      left: auto;
-      right: 0;
-    }
+  100%{
+    left:0;
+    right:auto;
+    width: 100%;
   }
-  @keyframes show{
-    0%{
-      opacity:0;
-      transform:translateY(-10px);
-    }
-    100%{
-      opacity:1;
-      transform:translateY(0);
-    }
+}
+@keyframes out{
+  0%{
+    width:100%;
+    left: auto;
+    right: 0;
   }
-  
-  @for $i from 1 through 5 {
-    nav a:nth-child(#{$i}){
-      animation:show .2s #{$i*0.1+1}s ease 1 both;
-    }
+  100%{
+    width: 0;
+    left: auto;
+    right: 0;
   }
+}
+@keyframes show{
+  0%{
+    opacity:0;
+    transform:translateY(-10px);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+@for $i from 1 through 5 {
+  nav a:nth-child(#{$i}){
+    animation:show .2s #{$i*0.1+1}s ease 1 both;
+  }
+}
 
-#jovanmiljkovic {transition: all 1s;}
+#jovanmiljkovic {
+  padding-top: 25px;
+  transition: all 1s;
+}
 #jovanmiljkovic:hover {transform: scale(0.7);}
 
 #j13 {
@@ -243,4 +252,18 @@
 }
 #j13:hover {
   transform: scale(1.3);
+}
+
+@media only screen and (max-width: 960px) {
+  .hero h1 {
+    width: 60%;
+  }
+
+  .footer ul li {
+    display: block;
+  }
+
+  .footer ul li:not(:first-child) {
+    padding-top: 30px;
+  }
 }
